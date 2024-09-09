@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display design</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows:repeat(3,3fr);
+            grid-template-columns: repeat(2,3fr);
+         grid-gap:1rem;
+            padding:24px;
+           
+        }
+        .item{
+            border: 3px solid black;
+            background-color: rgb(193, 118, 26);
+            color: rgb(110, 6, 6);
+            padding:24px;
+          
+        }
+        .item:first-child{
+        /* grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3; */
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 2;
+      
+        
+    }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">this is the new content-1</div>
+        <div class="item">this is the new content-2</div>
+        <div class="item">this is the new content-3</div>
+        <div class="item">this is the new content-4</div>
+        <div class="item">this is the new content-5</div>
+        <div class="item">this is the new content-6</div>
+        <div class="item">this is the new content-7</div>
+        <div class="item">this is the new content-8</div>
+    </div>
+    
+</body>
+</html>

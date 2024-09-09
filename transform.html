@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            background-color:  aquamarine;
+           
+        }
+        .box{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border:3px solid rgb(177, 88, 88);
+            border-radius:2px;
+            background-color:yellow;
+            width: 400px;
+            height: 300px;
+            transition: all 0.8s ease-in-out;
+
+        }
+        .box:hover{
+transform: rotate(360deg);
+        }
+        p{
+            text-decoration:wavy;
+            text-shadow: 3px;
+            font-size: xx-large;
+            font-weight: 700;
+            font-style: oblique;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>HeLLoW GuyZZZZ
+            <br>Kaise ho sab majama!!!!!
+            </p> 
+        </div>
+    </div>
+
+</body>
+
+</html>

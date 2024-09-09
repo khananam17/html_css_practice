@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>lets create a form from html</h1><hr>
+    <br>
+    <form action="backend.php">
+        <div>
+     NAME:  <input type="text" name="myName" >
+    </div>
+    <br>
+        <div>
+     email:  <input type="email" name="myEmail">
+    </div>
+    <br>
+        <div>
+     number:  <input type="number" name="myNumber" >
+    </div>
+    <br>
+        <div>
+     gender: male<input type="radio" name="myGender" ><br> female<input type="radio" name="myGender" > other<input type="radio" name="myGender" >
+    </div> <br>
+        <div>
+    are you eligible?: <br> <input type="checkbox" name="myEligiblity" >
+    </div> <br>
+        <div>
+     date:  <input type="date" name="mydate" >
+    </div> <br>
+        <div>
+     tell about yourself: <br> <textarea name="myText" cols="70" rows="20"></textarea>
+    </div> <br>
+        <div>
+     department:  <select name="mydept" id="dept">
+        <option value="IT">IT</option>
+        <option value="CSE">CSE</option>
+        <option value="EC">EC</option>
+     </select> 
+
+    </div> <br>
+    <div><hr>
+       SUBMIT: <input type="submit" value="SUBMIT NOW">
+        </div>
+        <div>
+            RESET: <input type="reset" value="reset form">
+            </div> <br>
+    </form>
+</body>
+</html>

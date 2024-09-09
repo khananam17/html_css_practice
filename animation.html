@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keywords</title>
+    <style>
+        .container {
+            /* display:flex; */
+            background-color: rgb(136, 224, 49);
+            border: 2px solid rgb(240, 128, 184);
+        }
+
+        .box {
+            width: 500px;
+            height: 400px;
+            background-color: rgb(233, 126, 49);
+            border: 3px solid rgb(240, 33, 136);
+            animation-name: anam;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 0.9s;
+            animation-iteration-count: 5;
+            animation-fill-mode: backwards;
+
+         }
+
+       /* @keyframes anam2 {
+        0%{
+            top:0px;
+            left:0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+        
+    } */
+
+        @keyframes anam {
+            from {
+                width: 50px;
+
+            }
+
+            to {
+                width: 800px;
+            }
+
+         }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+
+</body>
+
+</html>
